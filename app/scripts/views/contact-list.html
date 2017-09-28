@@ -1,0 +1,36 @@
+<div class="row">
+		<div ng-repeat="value in contactList track by $index">
+			<div class="clearfix" ng-if="$index % 3 == 0"></div>
+			<div ng-init="readyForEdit[$index]=false" ng-class="{edit_ready : readyForEdit[$index]}" class="col-lg-4 col-md-4 col-sm-4 well list_arrange" ng-init="isDisabled[$index] = true">
+					<span ng-init="hover = false" ng-click="editContact($index)" ng-mouseenter="hover = true" ng-mouseleave="hover = false" class="glyphicon glyphicon-edit pull-right" ng-class="{glyphicon_custom: hover}" aria-hidden="true"></span>
+		            <div>
+		            	<label>First Name</label>
+		            	<label class="label_custom">:</label>
+		            	<span>
+		            		<input type="text" name="firstName" ng-model="model.firstName[$index]" ng-init="model.firstName[$index] = value.firstName" ng-disabled="isDisabled[$index]">
+		            	</span>
+		            </div>
+		            <div>
+		            	<label>Last Name</label>
+		            	<label class="label_custom">:</label>
+		            	<span>
+		            		<input type="text" name="lastName" ng-model="model.lastName[$index]" ng-init="model.lastName[$index] = value.lastName" ng-disabled="isDisabled[$index]">
+		            	</span>
+		            </div>
+		            <div>
+		            	<label>Contact Number</label>
+		            	<label style="margin-left: 2px; margin-right: 5px">:</label>
+		            	<span>
+		            		<input type="text" name="contactNumber" ng-model="model.contactNumber[$index]" ng-init="model.contactNumber[$index] = value.contactNumber" ng-disabled="isDisabled[$index]">
+		            	</span>
+		            </div>
+		            <div>
+		            	<label>Contact Email</label>
+		            	<label style="margin-left: 16px; margin-right: 5px">:</label>
+		            	<span>
+		            		<input type="text" name="contactEmail" ng-model="model.contactEmail[$index]" ng-init="model.contactEmail[$index] = value.contactEmail" ng-disabled="isDisabled[$index]">
+		            	</span>
+		            </div>
+	        </div>
+		</div>
+</div>

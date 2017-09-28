@@ -1,0 +1,42 @@
+.list_arrange {
+	border-color: #37b094;
+    border-radius: 10px;
+    width: 300px;
+    height: 120px;
+    margin: 10px 10px 10px 10px;
+    background-color: white;
+    border-width: 0.11em;
+    padding: 12px !important;
+    color: #7e8b78 !important;
+    font-size: 13px;
+}
+
+.nav-bar-custom {
+	background-color: #37b094;
+}
+
+.brand-text-custom {
+	color : white !important;
+}
+
+.label_custom {
+	margin-right: 5px;
+	margin-left: 38px;
+}
+
+input {
+	border: 0;
+  	outline: 0;
+  	background: transparent;
+	border-bottom: 1px solid #37b094;
+	width: 80px;
+}
+
+.glyphicon_custom {
+	cursor: pointer;
+	color: blue;	
+}
+
+.edit_ready {
+	border-color: blue;
+}
